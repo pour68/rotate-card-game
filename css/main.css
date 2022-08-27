@@ -1,0 +1,102 @@
+ /* Mixin's */
+ body {
+     background: #333;
+     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+     min-height: 100vh;
+     color: #fff;
+     text-align: center;
+ }
+
+ h1,
+ h2,
+ h3 {
+     font-family: 'Roboto', sans-serif;
+     font-weight: 100;
+     text-transform: uppercase;
+ }
+
+ h1,
+ h2 {
+     font-size: 2.6em;
+ }
+
+ h3 {
+     font-size: 1.4em;
+ }
+
+ #seconds,
+ #tens {
+     font-size: 2em;
+ }
+
+ #container {
+     width: 100%;
+     max-width: 630px;
+     margin: 0.625rem auto;
+ }
+
+ [data-view="card"] {
+     transform: rotateY(180deg);
+     width: 100px;
+     height: 140px;
+     border: solid 1px #d3cece;
+     border-radius: 5px;
+     float: left;
+     margin: 10px;
+     cursor: pointer;
+     background: linear-gradient(135deg, #ff0055 22px, #fff 22px, #fff 24px, transparent 24px, transparent 67px, #fff 67px, #fff 69px, transparent 69px), linear-gradient(225deg, #ff0055 22px, #fff 22px, #fff 24px, transparent 24px, transparent 67px, #fff 67px, #fff 69px, transparent 69px) 0 64px;
+     background-color: #ff0055;
+     background-size: 64px 128px;
+ }
+
+ .flipped,
+ .reverse,
+ .correct {
+     transition: 0.4s;
+     transform-style: preserve-3d;
+     position: relative;
+ }
+
+ .flipped {
+     transform: rotateY(0);
+ }
+
+ .reverse {
+     transform: rotateY(180deg);
+ }
+
+ .correct {
+     opacity: 0.5;
+     cursor: default;
+     transform: rotateY(0);
+ }
+
+ .correct[data-item="sass"],
+ .flipped[data-item="sass"] {
+     background: url("../img/cow.png") left center no-repeat #fff;
+     background-size: contain;
+ }
+
+ .correct[data-item="gulp"],
+ .flipped[data-item="gulp"] {
+     background: url("../img/elephant.png") left center no-repeat #fff;
+     background-size: contain;
+ }
+
+ .correct[data-item="grunt"],
+ .flipped[data-item="grunt"] {
+     background: url("../img/environmental-expert.png") left center no-repeat #fff;
+     background-size: contain;
+ }
+
+ .correct[data-item="git"],
+ .flipped[data-item="git"] {
+     background: url("../img/gulp.png") left center no-repeat #fff;
+     background-size: contain;
+ }
+
+ .correct[data-item="css"],
+ .flipped[data-item="css"] {
+     background: url("../img/chita.png") left center no-repeat #fff;
+     background-size: contain;
+ }
